@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="coloring.org.jp.ktcc.full.app.activity.fragment.CropFragment"
+    android:background="@color/bg_main"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <!--
+    custom:scv_background_color="@drawable/transparent_repeat_bright"
+    -->
+
+    <!--Top-->
+    <RelativeLayout
+        android:id="@+id/layoutTop"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_bar"
+        android:orientation="horizontal"
+        android:background="@color/bg_action_bar">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/icon_button_width"
+            android:layout_height="@dimen/icon_button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:visibility="visible"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_back"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/icon_button_padding"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_bar"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/icon_button_width"
+            android:layout_marginRight="@dimen/icon_button_width"
+            android:background="@android:color/white"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:textAllCaps="true" />
+
+
+
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutTop"
+        android:columnWidth="90dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:padding="10dp"
+        />
+
+</RelativeLayout>

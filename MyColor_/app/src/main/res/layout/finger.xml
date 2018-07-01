@@ -1,0 +1,115 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+    <!--
+    <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:src="@drawable/test"
+            android:scaleType="fitXY"
+            android:layout_margin="@dimen/border_finder"/>
+    -->
+    <FrameLayout
+        android:id="@+id/centerFinder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_finder"
+        android:layout_margin="@dimen/margin_border_finder">
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/btnFreeEdit"
+        android:layout_width="@dimen/icon_button_finger"
+        android:layout_height="@dimen/icon_button_finger"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_free_edit"
+        android:padding="@dimen/padding_icon_button"/>
+    <ImageButton
+        android:id="@+id/btnZoomY"
+        android:layout_width="@dimen/icon_button_finger"
+        android:layout_height="@dimen/icon_button_finger"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_resize_side_v"
+        android:padding="@dimen/padding_icon_button"/>
+
+    <ImageButton
+        android:id="@+id/btnZoomXY"
+        android:layout_width="@dimen/icon_button_finger"
+        android:layout_height="@dimen/icon_button_finger"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_resize_side_v"
+        android:rotation="45"
+        android:padding="@dimen/padding_icon_button"/>
+
+    <ImageButton
+        android:id="@+id/btnZoomX"
+        android:layout_width="@dimen/icon_button_finger"
+        android:layout_height="@dimen/icon_button_finger"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_resize_side"
+        android:padding="@dimen/padding_icon_button"/>
+
+    <ImageButton
+        android:id="@+id/btnRotation360"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_rotate_360"
+        android:padding="@dimen/padding_icon_button"/>
+
+    <ImageButton
+        android:id="@+id/btnFixRatio"
+        android:layout_width="@dimen/icon_button_finger"
+        android:layout_height="@dimen/icon_button_finger"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_fix_ratio"
+        android:padding="@dimen/padding_icon_button"/>
+
+    <ImageButton
+        android:id="@+id/btnRotation90"
+        android:layout_width="@dimen/icon_button_finger"
+        android:layout_height="@dimen/icon_button_finger"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_rotate_90"
+        android:layout_marginLeft="@dimen/margin_btn_rotation"
+        android:layout_marginBottom="@dimen/margin_btn_rotation"
+        android:padding="@dimen/padding_icon_button"/>
+
+    <ImageButton
+        android:id="@+id/btnCopy"
+        android:layout_width="@dimen/icon_button_finger"
+        android:layout_height="@dimen/icon_button_finger"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_copy"
+        android:padding="@dimen/padding_icon_button"/>
+
+
+</RelativeLayout>

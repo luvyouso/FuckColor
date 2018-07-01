@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <View
+        android:id="@+id/borderBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_finder"
+        android:layout_gravity="center">
+    </View>
+
+    <coloring.org.jp.ktcc.full.custom_ui.Finger
+        android:id="@+id/finder"
+        android:layout_width="@dimen/size_finger"
+        android:layout_height="@dimen/size_finger"
+        android:layout_gravity="center"/>
+
+
+</FrameLayout>

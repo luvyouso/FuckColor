@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">塗り絵上級</string>
+    <string name="confirm_exit_app">終了するにはもう一度押す</string>
+    <string name="can_not_read_file">ファイルの読込みに失敗しました。</string>
+    <string name="choose">写真を選択してください</string>
+    <string name="circle_square">CIRCLE_SQUARE</string>
+    <string name="circle">サークル</string><!-- CIRCLE -->
+    <string name="free">自由</string><!-- FREE -->
+    <string name="square">平方</string><!-- SQUARE -->
+    <string name="fit_image">フィット</string><!-- FIT -->
+    <string name="text_color_effect_opacity">透明度</string><!-- Opacity -->
+    <string name="text_color_effect_hue">色相</string><!-- Hue -->
+    <string name="text_color_effect_tint">色合い</string><!-- Tint -->
+    <string name="text_color_effect_sepia">セピア</string><!-- Sepia -->
+    <string name="text_color_effect_temperature">暖かさ</string><!-- Temperature -->
+    <string name="text_color_effect_brightness">明るさ</string><!-- Brightness -->
+    <string name="text_color_effect_contrast">強弱度</string><!-- Contrast -->
+    <string name="text_color_effect_saturation">飽和度</string><!-- Saturation -->
+    <string name="text_color_effect_blur">ぼかし</string><!-- Blur -->
+    <string name="text_color_effect_close">閉じる</string>
+    <string name="text_title_color_effect">カラー編集</string>
+    <string name="text_title_eraser_size">消しゴムサイズ</string>
+    <string name="text_title_semi_threshold">近似色判定</string>
+    <!--  <string name="text_title_eraser_size">Touch to eraser and click done eraser to drag and zoom image.</string>-->
+    <!-- <string name="text_title_semi_threshold">Touch to semi and click done semi to drag and zoom image</string>-->
+
+    <string name="dialog_warning_remove_all_layer_title"></string>
+    <string name="dialog_warning_remove_all_layer_message">全てのレイヤを削除しますか？</string>
+    <string name="dialog_warning_remove_all_layer_yes">はい</string>
+    <string name="dialog_warning_remove_all_layer_no">いいえ</string>
+
+    <string name="dialog_warning_remove_layer_title"></string>
+    <string name="dialog_warning_remove_layer_message">このレイヤを削除しますか？</string>
+    <string name="dialog_warning_remove_layer_yes"> はい</string>
+    <string name="dialog_warning_remove_layer_no">いいえ</string>
+
+    <string name="dialog_warning_done_title"></string>
+    <string name="dialog_warning_done_message"> 全てのレイヤを合成しますか？</string>
+    <string name="dialog_warning_done_yes">はい</string>
+    <string name="dialog_warning_done_no">いいえ</string>
+
+    <string name="dialog_add_file_message">ファイル名を入力してください</string>
+    <string name="dialog_add_file_hint">ファイル名</string>
+    <string name="dialog_add_file_save">保存</string>
+    <string name="dialog_add_file_cancel">キャンセル</string>
+    <string name="dialog_add_file_message_success">写真を保存しました。</string>c
+    <string name="dialog_add_file_message_fail">写真を保存できませんでした。</string>
+    <string name="dialog_add_file_type_png">.png</string>
+    <string name="dialog_add_file_type_jpg">.jpg</string>
+
+    <string name="fragment_history_text_no_data"> データが見つかりません。</string>
+
+    <string name="dialog_warning_remove_all_history_message">全ての歴史を削除しますか？</string>
+    <string name="dialog_warning_remove_all_history_yes">はい</string>
+    <string name="dialog_warning_remove_all_history_no">いいえ</string>
+
+    <string name="dialog_warning_remove_history_message">この写真を削除しますか？</string>
+    <string name="dialog_warning_remove_history_yes"> はい</string>
+    <string name="dialog_warning_remove_history_no">いいえ</string>
+
+    <string name="web_page_title_about">このアプリについて</string>
+    <string name="web_page_title_guide">ガイド</string>
+    <string name="fragment_background_title"> 背景写真ライブラリ</string>
+    <string name="fragment_layer_title">レイヤー写真ライブラリ</string>
+
+    <string name="dialog_add_seal_message">名称入力</string>
+    <string name="dialog_add_seal_hint">落款印</string>
+    <string name="dialog_add_seal_next">次へ</string>
+    <string name="dialog_add_seal_cancel">キャンセル</string>
+    <string name="dialog_add_seal_error_message">最大4桁の名称を入力してください！</string>
+
+    <string name="text_guide_effect">画面を横スワイプするとエフェクトを調整できます。</string>
+    <string name="text_guide_effect_ok">閉じる</string>
+    <string name="text_message_effect_error">サーバーに接続できませんでした！</string>
+    <string name="text_title_width_seal">サイズ</string>
+
+
+    <string name="dialog_no_internet_title">インターネット・エラー</string>
+    <string name="dialog_no_internet_message">ネットワークの状態をご確認ください。</string>
+    <string name="dialog_no_internet_ok">閉じる</string>
+
+
+    <string-array name="array_seal_font_name">
+        <item>古印体</item>
+        <item>印相体</item>
+    </string-array>
+    <string-array name="array_effect_type">
+        <item>モザイク</item>
+        <item>コミック</item>
+        <item>トウキョウ</item>
+        <item>ファム</item>
+        <item>マーベル</item>
+    </string-array>
+    <string-array name="array_effect_type_en">
+        <item>mosaic</item>
+        <item>comic</item>
+        <item>tokyo</item>
+        <item>femme</item>
+        <item>marvel</item>
+    </string-array>
+
+    <string-array name="array_output_layer">
+        <item>A4</item>
+        <item>Circle</item>
+        <item>Square</item>
+        <item>9:16</item>
+        <item>3:4</item>
+        <item>3:5</item>
+        <item>2:3</item>
+    </string-array>
+
+    <string-array name="array_option">
+        <item>portrait</item>
+        <item>landscape</item>
+    </string-array>
+
+    <string name="output_layer">Layer</string>
+    <string name="output_layer_prompt">Choose a layer</string>
+    <string name="screen_orientation">Option</string>
+    <string name="text_ok">OK</string>
+</resources>
+
+

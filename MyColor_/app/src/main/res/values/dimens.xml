@@ -1,0 +1,28 @@
+<resources>
+    <dimen name="icon_button">40dp</dimen>
+    <dimen name="icon_button_padding">8dp</dimen>
+    <dimen name="icon_button_width">70dp</dimen>
+    <dimen name="height_bar">40dp</dimen>
+    <dimen name="crop_spacing_xlarge">24dp</dimen>
+    <dimen name="crop_spacing_xsmall">4dp</dimen>
+    <dimen name="crop_button_height">40dp</dimen>
+    <dimen name="crop_text_size_s">16sp</dimen>
+    <dimen name="size_image_panel_layout">80dp</dimen>
+    <dimen name="padding_image_panel_layout">5dp</dimen>
+    <dimen name="border_finder">1.3dp</dimen>
+    <dimen name="icon_button_finger">30dp</dimen>
+    <dimen name="margin_border_finder">15dp</dimen>
+    <dimen name="padding_icon_button">5dp</dimen>
+    <dimen name="margin_btn_rotation">1dp</dimen>
+    <dimen name="close_expand_panel">65dp</dimen>
+    <dimen name="close_expand_panel_history">80dp</dimen>
+    <dimen name="size_finger">180dp</dimen>
+    <dimen name="height_35">35dp</dimen>
+    <dimen name="height_45">45dp</dimen>
+    <dimen name="scroll_height_325">325dp</dimen>
+    <dimen name="scroll_height_415">415dp</dimen>
+    <dimen name="min_finger">130dp</dimen>
+    <dimen name="min_finger_seal">100dp</dimen>
+
+
+</resources>

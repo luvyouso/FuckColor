@@ -1,0 +1,225 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:clickable="true"
+    tools:context="coloring.org.jp.ktcc.full.app.activity.fragment.MainFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--Top-->
+        <LinearLayout
+            android:id="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_bar"
+            android:layout_alignParentTop="true"
+            android:background="@color/bg_action_bar"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnAddPhoto"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon_button"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_add_layer"
+                android:scaleType="fitCenter"
+                android:padding="@dimen/icon_button_padding"/>
+
+            <ImageButton
+                android:id="@+id/btnClearAllLayer"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon_button"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:padding="@dimen/icon_button_padding"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_clear_all_layer" />
+            <ImageButton
+                android:id="@+id/btnDone"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon_button"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_done"
+                android:scaleType="fitCenter"
+                android:padding="@dimen/icon_button_padding"
+                />
+            <ImageButton
+                android:id="@+id/btnHistory"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon_button"
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_history"
+                android:scaleType="fitCenter"
+                android:padding="@dimen/icon_button_padding"/>
+            <ImageButton
+                android:id="@+id/btnGuide"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon_button"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_guide"
+                android:scaleType="fitCenter"
+                android:padding="@dimen/icon_button_padding"/>
+            <ImageButton
+                android:id="@+id/btnAbout"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon_button"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:padding="@dimen/icon_button_padding"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_about"
+                android:visibility="visible"/>
+
+
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon_button"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_options"
+                android:scaleType="fitCenter"
+                android:padding="@dimen/icon_button_padding"/>
+
+        </LinearLayout>
+
+        <!--Center-->
+        <RelativeLayout
+            android:id="@+id/layout_center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@+id/layout_bottom"
+            android:layout_below="@+id/layout_top"
+            android:layout_weight="1"
+            android:background="@drawable/transparent_repeat_bright">
+
+            <coloring.org.jp.ktcc.full.custom_ui.MainLayers
+                android:id="@+id/mainLayers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_layer_panel"
+                android:layout_alignParentBottom="true">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvLayerPanel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_image_panel_layout"
+                android:layout_alignParentBottom="true"
+                android:background="#40000000"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+                <FrameLayout
+                    android:id="@+id/btnPanelLayout"
+                    android:layout_width="@dimen/close_expand_panel"
+                    android:layout_height="@dimen/close_expand_panel"
+                    android:layout_above="@+id/rvLayerPanel"
+                    android:layout_alignParentRight="true">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/btnShow"
+                        android:layout_width="23.6dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="end|bottom"
+                        android:src="@drawable/ic_show" />
+                </FrameLayout>
+          </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+        <!--Bottom-->
+        <LinearLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_bar"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_bottom_bar"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnChangeImage"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon_button"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn"
+                android:src="@drawable/ic_change_image"
+                android:scaleType="fitCenter"
+                android:padding="@dimen/icon_button_padding"/>
+
+            <ImageButton
+                android:id="@+id/btnColorEffect"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon_button"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn"
+                android:src="@drawable/ic_color_effect"
+                android:scaleType="fitCenter"
+                android:padding="@dimen/icon_button_padding"/>
+
+            <ImageButton
+                android:id="@+id/btnCrop"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon_button"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn"
+                android:src="@drawable/ic_crop"
+                android:scaleType="fitCenter"
+                android:padding="@dimen/icon_button_padding"/>
+
+            <ImageButton
+                android:id="@+id/btnFlip"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon_button"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn"
+                android:src="@drawable/ic_flip"
+                android:scaleType="fitCenter"
+                android:padding="@dimen/icon_button_padding"/>
+
+            <ImageButton
+                android:id="@+id/btnEdit"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon_button"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn"
+                android:src="@drawable/ic_edit"
+                android:scaleType="fitCenter"
+                android:padding="@dimen/icon_button_padding"/>
+
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon_button"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn"
+                android:src="@drawable/ic_delete"
+                android:scaleType="fitCenter"
+                android:padding="@dimen/icon_button_padding"/>
+
+        </LinearLayout>
+
+        <coloring.org.jp.ktcc.full.custom_ui.ColorEffectView
+            android:id="@+id/color_effect_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+</FrameLayout>

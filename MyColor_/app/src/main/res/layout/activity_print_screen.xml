@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".app.activity.PrintScreenActivity">
+        <!--Top-->
+        <RelativeLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_bar"
+            android:layout_alignParentTop="true"
+            android:background="@color/bg_action_bar"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/mImageButtonBack"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/icon_button"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:padding="@dimen/icon_button_padding"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_back" />
+
+            <ImageButton
+                android:id="@+id/mImageButtonDone"
+                android:layout_width="@dimen/icon_button_width"
+                android:layout_height="@dimen/icon_button"
+                android:layout_alignParentRight="true"
+                android:background="@color/transparent"
+                android:padding="@dimen/icon_button_padding"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_done" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layoutBottom"
+            android:layout_below="@+id/layoutTop"
+            android:background="@drawable/transparent_repeat_bright">
+
+            <coloring.org.jp.ktcc.full.custom_ui.MainLayers
+                android:id="@+id/mMainLayers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+
+        <!--Bottom-->
+        <LinearLayout
+            android:id="@+id/layoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_bar"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_bottom_bar"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/mImageButtonEffect"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon_button"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:padding="@dimen/icon_button_padding"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_menu_color_effect_select" />
+
+            <ImageButton
+                android:id="@+id/mImageButtonBorder"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon_button"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:padding="@dimen/icon_button_padding"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_menu_border" />
+
+            <ImageButton
+                android:id="@+id/mImageButtonCalendar"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon_button"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:padding="@dimen/icon_button_padding"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_menu_calendar" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

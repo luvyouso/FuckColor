@@ -1,0 +1,2 @@
+Alias: beginner
+password: beginner123

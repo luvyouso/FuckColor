@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="coloring.org.jp.ktcc.full.app.activity.fragment.CropFragment"
+    android:background="@color/bg_main"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <!--
+    custom:scv_background_color="@drawable/transparent_repeat_bright"
+    -->
+
+    <!--Top-->
+    <LinearLayout
+        android:id="@+id/layoutTop"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_bar"
+        android:orientation="horizontal"
+        android:background="@color/bg_action_bar"
+        android:gravity="center">
+
+        <ToggleButton
+            android:id="@+id/tgMode"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/icon_button_width"
+            android:layout_height="@dimen/height_bar"
+            android:background="@color/transparent"
+            android:button="@drawable/custom_toggle_button"
+            android:checked="false"
+            android:layout_margin="@dimen/icon_button_padding"
+            android:gravity="center"
+            android:padding="@dimen/icon_button_padding"
+            android:textOn=""
+            android:textOff=""/>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+        <ImageButton
+            android:id="@+id/btnLeftRotate"
+            android:layout_width="@dimen/icon_button_width"
+            android:layout_height="@dimen/icon_button"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_undo"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/icon_button_padding"/>
+        <ImageButton
+            android:id="@+id/btnRightRotate"
+            android:layout_width="@dimen/icon_button_width"
+            android:layout_height="@dimen/icon_button"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_redo"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/icon_button_padding"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+        <ImageButton
+            android:id="@+id/btnDone"
+            android:layout_width="@dimen/icon_button_width"
+            android:layout_height="@dimen/icon_button"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_done"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/icon_button_padding"/>
+
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_below="@+id/layoutTop"
+        android:layout_above="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <coloring.org.jp.ktcc.full.custom_ui.EditLayerView
+        android:id="@+id/editLayerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/transparent_repeat_bright"/>
+
+    </FrameLayout>
+
+    <!--Bottom-->
+    <LinearLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_bar"
+        android:orientation="horizontal"
+        android:background="@color/bg_bottom_bar"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+
+        <ImageButton
+            android:id="@+id/btnAutoRemove"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/icon_button"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_auto_remove_bg"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/icon_button_padding"/>
+
+        <ImageButton
+            android:id="@+id/btnSemiAutoRemove"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/icon_button"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_semi_auto_remove_bg"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/icon_button_padding"/>
+        <ImageButton
+            android:id="@+id/btnEraser"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/icon_button"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_eraser"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/icon_button_padding"/>
+        <ImageButton
+            android:id="@+id/btnRepair"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/icon_button"
+            android:visibility="gone"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_recovery"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/icon_button_padding"/>
+
+
+    </LinearLayout>
+    <coloring.org.jp.ktcc.full.custom_ui.EraserToolView
+        android:id="@+id/toolEraser"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_bar"
+        app:name="@string/text_title_eraser_size"
+        app:default_value="10"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        app:max_value="50"></coloring.org.jp.ktcc.full.custom_ui.EraserToolView>
+    <coloring.org.jp.ktcc.full.custom_ui.EraserToolView
+        android:id="@+id/toolSemi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_bar"
+        app:name="@string/text_title_semi_threshold"
+        app:default_value="25"
+        app:max_value="100"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"></coloring.org.jp.ktcc.full.custom_ui.EraserToolView>
+</RelativeLayout>

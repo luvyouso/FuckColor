@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/dialog_add_file_message" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/edtFileName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/dialog_add_file_hint"
+        android:padding="10dp" />
+    <RadioGroup
+        android:id="@+id/rbGroupType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+        <RadioButton
+            android:id="@+id/rbTypePNG"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAllCaps="true"
+            android:background="@android:color/transparent"
+            android:text="@string/dialog_add_file_type_png"/>
+        <RadioButton
+            android:layout_height="50dp"
+            android:checked="true"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:textAllCaps="true"
+            android:background="@android:color/transparent"
+            android:text="@string/dialog_add_file_type_jpg"/>
+    </RadioGroup>
+</LinearLayout>

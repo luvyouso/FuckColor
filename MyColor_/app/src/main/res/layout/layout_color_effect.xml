@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_bar"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="@string/text_title_color_effect" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_above="@+id/btClose"
+        android:layout_below="@+id/tvTitle"
+        android:layout_height="match_parent">
+        <View
+            android:id="@+id/background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/layout_contain"
+            android:layout_alignLeft="@+id/layout_contain"
+            android:layout_alignRight="@+id/layout_contain"
+            android:layout_alignTop="@+id/layout_contain"
+            android:background="#7F000000"></View>
+
+        <View
+            android:id="@+id/vTouch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/layout_contain"
+            android:background="@android:color/transparent"></View>
+
+        <LinearLayout
+            android:id="@+id/layout_contain"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/scroll_height_325"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="vertical"
+>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+                    <coloring.org.jp.ktcc.full.custom_ui.ColorEffectItem
+                        android:id="@+id/sb_opacity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_35"
+                        app:color_effect_item="@string/text_color_effect_opacity"
+                        app:color_effect_item_default_value="255"
+                        app:color_effect_item_max_value="255"></coloring.org.jp.ktcc.full.custom_ui.ColorEffectItem>
+
+                    <coloring.org.jp.ktcc.full.custom_ui.ColorEffectItem
+                        android:id="@+id/sb_hue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_35"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        app:color_effect_item="@string/text_color_effect_hue"
+                        app:color_effect_item_default_value="180"
+                        app:color_effect_item_max_value="360"></coloring.org.jp.ktcc.full.custom_ui.ColorEffectItem>
+
+                    <coloring.org.jp.ktcc.full.custom_ui.ColorEffectItem
+                        android:id="@+id/sb_tint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_35"
+                        app:color_effect_item="@string/text_color_effect_tint"
+                        app:color_effect_item_default_value="255"
+                        app:color_effect_item_max_value="510"></coloring.org.jp.ktcc.full.custom_ui.ColorEffectItem>
+
+                    <coloring.org.jp.ktcc.full.custom_ui.ColorEffectItem
+                        android:id="@+id/sb_sepia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_35"
+                        app:color_effect_item="@string/text_color_effect_sepia"
+                        app:color_effect_item_default_value="255"
+                        app:color_effect_item_max_value="510"></coloring.org.jp.ktcc.full.custom_ui.ColorEffectItem>
+
+                    <coloring.org.jp.ktcc.full.custom_ui.ColorEffectItem
+                        android:id="@+id/sb_temperature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_35"
+                        app:color_effect_item="@string/text_color_effect_temperature"
+                        app:color_effect_item_default_value="255"
+                        app:color_effect_item_max_value="510"></coloring.org.jp.ktcc.full.custom_ui.ColorEffectItem>
+
+                    <coloring.org.jp.ktcc.full.custom_ui.ColorEffectItem
+                        android:id="@+id/sb_brightness"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_35"
+                        app:color_effect_item="@string/text_color_effect_brightness"
+                        app:color_effect_item_default_value="255"
+                        app:color_effect_item_max_value="510"></coloring.org.jp.ktcc.full.custom_ui.ColorEffectItem>
+
+                    <coloring.org.jp.ktcc.full.custom_ui.ColorEffectItem
+                        android:id="@+id/sb_contrast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_35"
+                        app:color_effect_item="@string/text_color_effect_contrast"
+                        app:color_effect_item_default_value="255"
+                        app:color_effect_item_max_value="510"></coloring.org.jp.ktcc.full.custom_ui.ColorEffectItem>
+
+                    <coloring.org.jp.ktcc.full.custom_ui.ColorEffectItem
+                        android:id="@+id/sb_saturation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_35"
+                        app:color_effect_item="@string/text_color_effect_saturation"
+                        app:color_effect_item_default_value="100"
+                        app:color_effect_item_max_value="200"></coloring.org.jp.ktcc.full.custom_ui.ColorEffectItem>
+
+                    <coloring.org.jp.ktcc.full.custom_ui.ColorEffectItem
+                        android:id="@+id/sb_blur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_35"
+                        app:color_effect_item="@string/text_color_effect_blur"
+                        app:color_effect_item_default_value="255"
+                        app:color_effect_item_max_value="510"></coloring.org.jp.ktcc.full.custom_ui.ColorEffectItem>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btClose"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_bar"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="@string/text_color_effect_close" />
+
+</RelativeLayout>

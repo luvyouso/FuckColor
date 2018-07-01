@@ -1,0 +1,98 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+    <FrameLayout
+        android:id="@+id/centerFinder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_finder"
+        android:layout_margin="@dimen/margin_border_finder">
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/btnFreeEdit"
+        android:layout_width="@dimen/icon_button_finger"
+        android:layout_height="@dimen/icon_button_finger"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_free_edit"
+        android:visibility="gone"
+        android:padding="@dimen/padding_icon_button"/>
+
+
+    <ImageButton
+        android:id="@+id/btnZoomXY"
+        android:layout_width="@dimen/icon_button_finger"
+        android:layout_height="@dimen/icon_button_finger"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_resize_side_v"
+        android:rotation="45"
+        android:visibility="gone"
+        android:padding="@dimen/padding_icon_button"/>
+
+    <ImageButton
+        android:id="@+id/btnRemove"
+        android:layout_width="@dimen/icon_button_finger"
+        android:layout_height="@dimen/icon_button_finger"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/padding_icon_button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_delete_seal" />
+
+    <ImageButton
+        android:id="@+id/btnRotation360"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_rotate_360"
+        android:padding="@dimen/padding_icon_button"/>
+
+
+    <ImageButton
+        android:id="@+id/btnRotation90"
+        android:layout_width="@dimen/icon_button_finger"
+        android:layout_height="@dimen/icon_button_finger"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_rotate_90"
+        android:layout_marginLeft="@dimen/margin_btn_rotation"
+        android:layout_marginBottom="@dimen/margin_btn_rotation"
+        android:padding="@dimen/padding_icon_button"/>
+
+    <ImageButton
+        android:id="@+id/btnEdit"
+        android:layout_width="@dimen/icon_button_finger"
+        android:layout_height="@dimen/icon_button_finger"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_rename"
+        android:padding="@dimen/padding_icon_button"/>
+    <ImageButton
+        android:id="@+id/btnZoomY"
+        android:layout_width="@dimen/icon_button_finger"
+        android:layout_height="@dimen/icon_button_finger"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_resize_side_v"
+        android:padding="@dimen/padding_icon_button"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <declare-styleable name="ColorEffect">
+        <attr name="color_effect_item" format="string"/>
+       <attr name="color_effect_item_max_value" format="float"/>
+       <attr name="color_effect_item_default_value" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="EraserTool">
+        <attr name="name" format="string"/>
+        <attr name="max_value" format="float"/>
+        <attr name="default_value" format="float"/>
+    </declare-styleable>
+</resources>

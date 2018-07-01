@@ -1,0 +1,31 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style name="AppTheme.Button.Borderless" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:textColor">@color/crop_textColorPrimary</item>
+        <item name="android:minHeight">@dimen/crop_button_height</item>
+        <item name="android:textSize">@dimen/crop_text_size_s</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+    </style>
+    <style name="tallerBarStyle" parent="@android:style/Widget.SeekBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/seekbar_progress</item>
+        <item name="android:minHeight">2dip</item>
+        <item name="android:maxHeight">2dip</item>
+    </style>
+
+    <style name="dialog_init_layer" parent="android:Theme.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowMinWidthMajor">50%</item>
+        <item name="android:windowMinWidthMinor">80%</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>
